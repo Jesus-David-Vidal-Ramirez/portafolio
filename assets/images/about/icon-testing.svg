@@ -1,0 +1,8 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Engranaje (debugging) -->
+  <circle cx="24" cy="24" r="10" stroke="#00F0FF" stroke-width="3" fill="none"/>
+  <path stroke="#00F0FF" stroke-width="3" stroke-linecap="round" d="M24 14v-6M24 38v-6M14 24h-6M38 24h-6M18.343 18.343l-4.243-4.243M33.9 33.9l-4.243-4.243M18.343 29.657l-4.243 4.243M33.9 14.1l-4.243 4.243"/>
+
+  <!-- Check mark (testing) -->
+  <path d="M18 24l6 6 12-12" stroke="#00F0FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -48,7 +48,7 @@
           </div>
 
           <button class="info_more-btn" data-sidebar-btn>
-            <span>Show Contacts</span>
+            <span>Ver Mas</span>
 
             <ion-icon name="chevron-down"></ion-icon>
           </button>
@@ -181,7 +181,7 @@
 
         <!-- ABOUT -->
 
-        <article class="about active" data-page="about">
+        <article class="about" data-page="about">
           <header>
             <h2 class="h2 article-title">About me</h2>
           </header>
@@ -575,7 +575,7 @@
                   class="certification-link"
                   href="https://drive.google.com/file/d/1f_b_dpSGIZmih83mvWSXBO5cNWSRMQgQ/view?usp=drive_link"
                   target="_blank"
-                  >Certificacion</a
+                  >Certificación</a
                 >
               </li>
 
@@ -591,7 +591,7 @@
                   class="certification-link"
                   href="https://drive.google.com/file/d/1lCsPMjilJ1E26_FR4WYXRsL4DyJauPxZ/view?usp=drive_link"
                   target="_blank"
-                  >Certificacion</a
+                  >Certificación</a
                 >
               </li>
 
@@ -607,7 +607,7 @@
                   class="certification-link"
                   href="https://drive.google.com/file/d/1AFXAB4gQDuXwYHxCUaMSmzt4KrBkmHIi/view"
                   target="_blank"
-                  >Certificacion</a
+                  >Certificación</a
                 >
               </li>
 
@@ -625,7 +625,7 @@
                   class="certification-link"
                   href="https://drive.google.com/file/d/1v3wqhqDHAzUErh-6xK1a_abVoD61MYue/view?usp=drive_link"
                   target="_blank"
-                  >Certificacion</a
+                  >Certificación</a
                 >
               </li>
             </ol>
@@ -642,7 +642,13 @@
 
             <ol class="timeline-list">
               <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Desarrollador Web</h4>
+                <a
+                  class="h4 timeline-item-title"
+                  href="https://www.linkedin.com/company/sipremcol"
+                  target="_blank"
+                  ><h4>Desarrollador Web</h4></a
+                >
+                <!-- <h4 class="h4 timeline-item-title">Desarrollador Web</h4> -->
 
                 <span>2022 — Present</span>
 
@@ -652,14 +658,20 @@
                   mantenimiento en API en Framework como ( Laravel, Lumen,
                   Express ). Con el gestor de bases de datos MySQL, igualmente
                   se ha realizado optimizacion creacion de consultas,
-                  Almacenamiento de informacion en space S3, SocketIO,
-                  DockerFile, Testing PHPUnit, mantenimiento en sistemas
-                  monolito y accion de nuevas funcionabilidades.
+                  Almacenamiento de informacion en space S3, SocketIO, Docker,
+                  Testing PHPUnit, mantenimiento en sistemas monolito y accion
+                  de nuevas funcionabilidades.
                 </p>
               </li>
 
               <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Analista I.T</h4>
+                <a
+                  class="h4 timeline-item-title"
+                  href="https://www.linkedin.com/company/gralcosa"
+                  target="_blank"
+                  ><h4>Analista I.T</h4></a
+                >
+                <!-- <h4 class="h4 timeline-item-title">Analista I.T</h4> -->
 
                 <span>2021 — 2022</span>
 
@@ -990,7 +1002,7 @@
 
         <!-- PORTFOLIO -->
 
-        <article class="portfolio" data-page="proyectos">
+        <article class="portfolio active" data-page="proyectos">
           <header>
             <h2 class="h2 article-title">Proyectos</h2>
           </header>
@@ -1002,15 +1014,15 @@
               </li>
 
               <li class="filter-item">
-                <button data-filter-btn>Web design</button>
+                <button data-filter-btn>FullStack</button>
               </li>
 
               <li class="filter-item">
-                <button data-filter-btn>Applications</button>
+                <button data-filter-btn>Frontend</button>
               </li>
 
               <li class="filter-item">
-                <button data-filter-btn>Web development</button>
+                <button data-filter-btn>Backend</button>
               </li>
             </ul>
 
@@ -1031,15 +1043,15 @@
                 </li>
 
                 <li class="select-item">
-                  <button data-select-item>Web design</button>
+                  <button data-select-item>FullStack</button>
                 </li>
 
                 <li class="select-item">
-                  <button data-select-item>Applications</button>
+                  <button data-select-item>Frontend</button>
                 </li>
 
                 <li class="select-item">
-                  <button data-select-item>Web development</button>
+                  <button data-select-item>Backend</button>
                 </li>
               </ul>
             </div>
@@ -1048,217 +1060,153 @@
               <li
                 class="project-item active"
                 data-filter-item
-                data-category="web development"  
+                data-category="frontend"
               >
-                <a href="https://jesus-david-vidal-ramirez.github.io/Mis-Conocimientos/" target="_blank">
+                <div class="project-wrapper">
                   <figure class="project-img">
+                    <!-- Capa de overlay para el hover -->
+                    <div class="project-overlay"></div>
+
+                    <!-- Contenedor de iconos separado de los enlaces principales -->
                     <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
+                      <a
+                        href="https://snazzy-tulumba-c7bece.netlify.app/"
+                        target="_blank"
+                        class="icon-link"
+                      >
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </a>
+                      <a
+                        href="https://github.com/Jesus-David-Vidal-Ramirez/vue-animes"
+                        target="_blank"
+                        class="icon-link"
+                      >
+                        <ion-icon name="logo-github"></ion-icon>
+                      </a>
                     </div>
 
                     <img
-                      src="./assets/images/project-1.jpg"
-                      alt="finance"
+                      src="./assets/images/project/vue-anime.png"
+                      alt="vue-anime"
                       loading="lazy"
                     />
                   </figure>
+                  <h3 class="project-title">Vue Animes</h3>
 
-                  <h3 class="project-title">Finance</h3>
-
-                  <p class="project-category">Web development</p>
-                </a>
+                  <p class="project-category">Frontend</p>
+                </div>
               </li>
 
               <li
                 class="project-item active"
                 data-filter-item
-                data-category="web development"
+                data-category="frontend"
               >
-                <a href="#">
+                <div class="project-wrapper">
                   <figure class="project-img">
+                    <!-- Capa de overlay para el hover -->
+                    <div class="project-overlay"></div>
+
+                    <!-- Contenedor de iconos separado de los enlaces principales -->
                     <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
+                      <a
+                        href="https://jesus-david-vidal-ramirez.github.io/Mis-Conocimientos/"
+                        target="_blank"
+                        class="icon-link"
+                      >
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </a>
+                      <a
+                        href="https://github.com/Jesus-David-Vidal-Ramirez/Mis-Conocimientos"
+                        target="_blank"
+                        class="icon-link"
+                      >
+                        <ion-icon name="logo-github"></ion-icon>
+                      </a>
                     </div>
 
                     <img
-                      src="./assets/images/project-2.png"
-                      alt="orizon"
+                      src="./assets/images/project/portafolio-v1.png"
+                      alt="vue-anime"
                       loading="lazy"
                     />
                   </figure>
+                  <h3 class="project-title">Portafolio</h3>
 
-                  <h3 class="project-title">Orizon</h3>
-
-                  <p class="project-category">Web development</p>
-                </a>
+                  <p class="project-category">Frontend</p>
+                </div>
               </li>
 
               <li
                 class="project-item active"
                 data-filter-item
-                data-category="web design"
+                data-category="fullstack"
               >
-                <a href="#">
+                <div class="project-wrapper">
                   <figure class="project-img">
+                    <div class="project-overlay"></div>
+
                     <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
+                      <a
+                        href="https://rifas-laravel-12.onrender.com/"
+                        target="_blank"
+                        class="icon-link"
+                      >
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </a>
+                      <a
+                        href="https://github.com/Jesus-David-Vidal-Ramirez/rifas-laravel-12"
+                        target="_blank"
+                        class="icon-link"
+                      >
+                        <ion-icon name="logo-github"></ion-icon>
+                      </a>
                     </div>
 
                     <img
-                      src="./assets/images/project-3.jpg"
-                      alt="fundo"
+                      src="./assets/images/project/rifas.png"
+                      alt="vue-anime"
                       loading="lazy"
                     />
                   </figure>
+                  <h3 class="project-title">Loterias</h3>
 
-                  <h3 class="project-title">Fundo</h3>
-
-                  <p class="project-category">Web design</p>
-                </a>
+                  <p class="project-category">FullStack</p>
+                </div>
               </li>
 
               <li
                 class="project-item active"
                 data-filter-item
-                data-category="applications"
+                data-category="backend"
               >
-                <a href="#">
+                <div class="project-wrapper">
                   <figure class="project-img">
+                    <div class="project-overlay"></div>
+
                     <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
+                      <!-- <a href="https://rifas-laravel-12.onrender.com/" target="_blank" class="icon-link">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </a> -->
+                      <a
+                        href="https://github.com/Jesus-David-Vidal-Ramirez/api-task"
+                        target="_blank"
+                        class="icon-link"
+                      >
+                        <ion-icon name="logo-github"></ion-icon>
+                      </a>
                     </div>
 
                     <img
-                      src="./assets/images/project-4.png"
-                      alt="brawlhalla"
+                      src="./assets/images/project/Api.png"
+                      alt="Api-Task"
                       loading="lazy"
                     />
                   </figure>
+                  <h3 class="project-title">Api Task</h3>
 
-                  <h3 class="project-title">Brawlhalla</h3>
-
-                  <p class="project-category">Applications</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web design"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/project-5.png"
-                      alt="dsm."
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">DSM.</h3>
-
-                  <p class="project-category">Web design</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web design"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/project-6.png"
-                      alt="metaspark"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">MetaSpark</h3>
-
-                  <p class="project-category">Web design</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web development"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/project-7.png"
-                      alt="summary"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Summary</h3>
-
-                  <p class="project-category">Web development</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="applications"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/project-8.jpg"
-                      alt="task manager"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Task Manager</h3>
-
-                  <p class="project-category">Applications</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web development"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/project-9.png"
-                      alt="arrival"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Arrival</h3>
-
-                  <p class="project-category">Web development</p>
-                </a>
+                  <p class="project-category">Backend</p>
+                </div>
               </li>
             </ul>
           </section>
@@ -1272,7 +1220,38 @@
           </header>
 
           <section class="blog-posts">
-            <ul class="blog-posts-list">
+            <div class="cargando">
+              in progress
+              <svg
+                width="48"
+                height="48"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  class="spinner_qM83"
+                  cx="4"
+                  cy="12"
+                  r="3"
+                  fill="white"
+                />
+                <circle
+                  class="spinner_qM83 spinner_oXPr"
+                  cx="12"
+                  cy="12"
+                  r="3"
+                  fill="white"
+                />
+                <circle
+                  class="spinner_qM83 spinner_ZTLf"
+                  cx="20"
+                  cy="12"
+                  r="3"
+                  fill="white"
+                />
+              </svg>
+            </div>
+            <!-- <ul class="blog-posts-list">
               <li class="blog-post-item">
                 <a href="#">
                   <figure class="blog-banner-box">
@@ -1454,7 +1433,7 @@
                   </div>
                 </a>
               </li>
-            </ul>
+            </ul> -->
           </section>
         </article>
 
@@ -1485,6 +1464,7 @@
                 <input
                   type="text"
                   name="fullname"
+                  id="fullname"
                   class="form-input"
                   placeholder="Nombre"
                   required
@@ -1494,6 +1474,7 @@
                 <input
                   type="email"
                   name="email"
+                  id="email"
                   class="form-input"
                   placeholder="Email"
                   required
@@ -1502,6 +1483,7 @@
               </div>
 
               <textarea
+                id="message"
                 name="message"
                 class="form-input"
                 placeholder="Tu Mensaje"
@@ -1511,9 +1493,14 @@
 
               <button class="form-btn" type="submit" disabled data-form-btn>
                 <ion-icon name="paper-plane"></ion-icon>
+
                 <span>Enviar Mensaje</span>
               </button>
             </form>
+          </section>
+          <!-- Alerta Envio de correo -->
+          <section class="alert">
+            <p>✅ Correo enviado correctamente.</p>
           </section>
         </article>
       </div>
@@ -1542,11 +1529,15 @@
         .getElementById("contactame")
         .addEventListener("submit", function (e) {
           e.preventDefault();
+          const alert = document.getElementsByClassName("alert");
 
           emailjs.sendForm("service_ritnykh", "template_lt2p5sg", this).then(
             function () {
-              alert("Correo enviado correctamente.");
-              // TODO: Limpiar el form
+              document.getElementById("contactame").reset();
+              alert[0].className = "alert active";
+              setTimeout(() => {
+                alert[0].className = "alert";
+              }, 1500);
             },
             function (error) {
               console.log("Error al enviar:", error);

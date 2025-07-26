@@ -45,32 +45,7 @@
     /* hsl(45, 100%, 72%), 
     hsl(35, 100%, 68%) */
   );
-  /* 
-  .color1 {color: #002138;}
-  hsl(208, 100%, 11%)
-  .color2 {color: #004363;}
-  hsl(199, 100%, 20%)
-  .color3 {color: #007297;}
-  hsl(195, 100%, 30%)
-  .color4 {color: #00aed1;}
-  hsl(190, 100%, 41%)
-  .color5 {color: #00f7ff;}
-  hsl(181, 100%, 50%)
-  */
-
-  /* 
-  .color1 {color: #000000;}
-  hsl(0, 0%, 0%)
-  .color2 {color: #0c2539;}
-  hsl(211, 57%, 13%)
-  .color3 {color: #23577d;}
-  hsl(207, 56%, 31%)
-  .color4 {color: #3a91cb;}
-  hsl(204, 59%, 52%)
-  .color5 {color: #50d1ff;} 
-  hsl(195, 100%, 66%)
-  */
-
+  
   /* solid */
 
   --jet: hsl(0, 0%, 22%);
@@ -128,10 +103,6 @@
 
 }
 
-
-
-
-
 /*-----------------------------------*\
   #RESET
 \*-----------------------------------*/
@@ -173,10 +144,6 @@ input, textarea {
 html { font-family: var(--ff-poppins); }
 
 body { background: var(--smoky-black); }
-
-
-
-
 
 /*-----------------------------------*\
   #REUSED STYLE
@@ -309,10 +276,6 @@ article.active {
   z-index: -1;
 }
 
-
-
-
-
 /*-----------------------------------*\
   #MAIN
 \*-----------------------------------*/
@@ -322,10 +285,6 @@ main {
   margin-bottom: 75px;
   min-width: 259px;
 }
-
-
-
-
 
 /*-----------------------------------*\
   #SIDEBAR
@@ -465,12 +424,7 @@ main {
   font-size: 18px;
 }
 
-
 .social-item .social-link:hover { color: var(--light-gray); }
-
-
-
-
 
 /*-----------------------------------*\
   #NAVBAR
@@ -509,10 +463,6 @@ main {
 
 .navbar-link.active { color: var(--orange-yellow-crayola); }
 
-
-
-
-
 /*-----------------------------------*\
   #ABOUT
 \*-----------------------------------*/
@@ -527,8 +477,6 @@ main {
 }
 
 .about-text p { margin-bottom: 15px; }
-
-
 
 /**
  * #service 
@@ -779,16 +727,11 @@ main {
 
 .clients-item img:hover { filter: grayscale(0); }
 
-
-
-
-
 /*-----------------------------------*\
   #RESUME
 \*-----------------------------------*/
 
 .article-title { margin-bottom: 30px; }
-
 
 /**
  * education and experience 
@@ -863,7 +806,6 @@ main {
   line-height: 1.6;
 }
 
-
 /**
  * skills 
  */
@@ -900,10 +842,6 @@ main {
   height: 100%;
   border-radius: inherit;
 }
-
-
-
-
 
 /*-----------------------------------*\
   #PORTFOLIO
@@ -1008,7 +946,7 @@ main {
   transition: var(--transition-1);
 }
 
-.project-item > a:hover .project-img::before { background: hsla(0, 0%, 0%, 0.5); }
+/* .project-item > a:hover .project-img::before { background: hsla(0, 0%, 0%, 0.5); } */
 
 .project-item-icon-box {
   --scale: 0.8;
@@ -1025,6 +963,55 @@ main {
   opacity: 0;
   z-index: 1;
   transition: var(--transition-1);
+
+  /* Hacer que los iconos se muestren horizontalmente */
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 12px 20px;
+}
+
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: 1;
+  transition: var(--transition-1);
+  border-radius: 16px;
+}
+
+.project-wrapper:hover .project-item-icon-box {
+  --scale: 1;
+  opacity: 1;
+}
+
+.project-item-icon-box .icon-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: var(--orange-yellow-crayola);
+  transition: var(--transition-1);
+}
+
+.project-item-icon-box .icon-link:hover {
+  background: var(--orange-yellow-crayola);
+  color: var(--smoky-black);
+  transform: scale(1.1);
+}
+
+.project-wrapper:hover .project-img img {
+  transform: scale(1.1);
+}
+
+.project-wrapper:hover .project-overlay {
+  background: hsla(0, 0%, 0%, 0.5);
 }
 
 .project-item > a:hover .project-item-icon-box {
@@ -1059,10 +1046,6 @@ main {
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
 }
-
-
-
-
 
 /*-----------------------------------*\
   #BLOG
@@ -1147,10 +1130,6 @@ main {
   font-weight: var(--fw-300);
   line-height: 1.6;
 }
-
-
-
-
 
 /*-----------------------------------*\
   #CONTACT
@@ -1255,10 +1234,58 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 .form-btn:disabled:hover::before { background: var(--bg-gradient-jet); }
 
+.alert{
+  display: none;
+}
 
+.alert.active{
+  display: flex;
+  color: var(--white-1);
+  background: var(--border-gradient-onyx);
+  justify-content: center;
+  padding: 1em;
+  margin: 0em 10em;
+  box-shadow: var(--shadow-5);
+  color: var(--orange-yellow-crayola);
+}
+ 
+.spinner_qM83 {
+  animation: spinner_8HQG 1.05s infinite
+}
 
+.spinner_oXPr {
+  animation-delay: .1s
+}
 
+.spinner_ZTLf {
+  animation-delay: .2s
+}
 
+@keyframes spinner_8HQG {
+
+  0%,
+  57.14% {
+    animation-timing-function: cubic-bezier(0.33, .66, .66, 1);
+    transform: translate(0)
+  }
+
+  28.57% {
+    animation-timing-function: cubic-bezier(0.33, 0, .66, .33);
+    transform: translateY(-6px)
+  }
+
+  100% {
+    transform: translate(0)
+  }
+}
+
+.cargando{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+}
 /*-----------------------------------*\
   #RESPONSIVE
 \*-----------------------------------*/

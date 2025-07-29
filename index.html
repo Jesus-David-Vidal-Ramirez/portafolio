@@ -23,6 +23,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
 
   <body>
@@ -35,7 +36,7 @@
         <div class="sidebar-info">
           <figure class="avatar-box">
             <img
-              src="./assets/images/my-avatar.png"
+              src="./assets/images/about/yo.png"
               alt="Jesus Vidal"
               width="80"
             />
@@ -181,7 +182,7 @@
 
         <!-- ABOUT -->
 
-        <article class="about" data-page="about">
+        <article class="about active" data-page="about">
           <header>
             <h2 class="h2 article-title">About me</h2>
           </header>
@@ -221,7 +222,7 @@
             <h3 class="h3 service-title">Areas</h3>
 
             <ul class="service-list">
-              <li class="service-item">
+              <li class="service-item" data-aos="fade-right">
                 <div class="service-icon-box">
                   <img
                     src="./assets/images/about/icon-backend.svg"
@@ -242,7 +243,7 @@
                 </div>
               </li>
 
-              <li class="service-item">
+              <li class="service-item" data-aos="fade-left">
                 <div class="service-icon-box">
                   <img
                     src="./assets/images/about/icon-frontend.svg"
@@ -262,7 +263,7 @@
                 </div>
               </li>
 
-              <li class="service-item">
+              <li class="service-item" data-aos="fade-up-right">
                 <div class="service-icon-box">
                   <img
                     src="./assets/images/about/icon-database.svg"
@@ -282,7 +283,7 @@
                 </div>
               </li>
 
-              <li class="service-item">
+              <li class="service-item" data-aos="fade-up-left">
                 <div class="service-icon-box">
                   <img
                     src="./assets/images/about/icon-testing.svg"
@@ -1002,7 +1003,7 @@
 
         <!-- PORTFOLIO -->
 
-        <article class="portfolio active" data-page="proyectos">
+        <article class="portfolio" data-page="proyectos">
           <header>
             <h2 class="h2 article-title">Proyectos</h2>
           </header>
@@ -1029,7 +1030,7 @@
             <div class="filter-select-box">
               <button class="filter-select" data-select>
                 <div class="select-value" data-selecct-value>
-                  Select category
+                  Selecciona Categoria
                 </div>
 
                 <div class="select-icon">
@@ -1057,6 +1058,44 @@
             </div>
 
             <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="fullstack"
+              >
+                <div class="project-wrapper">
+                  <figure class="project-img">
+                    <div class="project-overlay"></div>
+
+                    <div class="project-item-icon-box">
+                      <a
+                        href="https://rifas-laravel-12.onrender.com/"
+                        target="_blank"
+                        class="icon-link"
+                      >
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </a>
+                      <a
+                        href="https://github.com/Jesus-David-Vidal-Ramirez/rifas-laravel-12"
+                        target="_blank"
+                        class="icon-link"
+                      >
+                        <ion-icon name="logo-github"></ion-icon>
+                      </a>
+                    </div>
+
+                    <img
+                      src="./assets/images/project/rifas.png"
+                      alt="vue-anime"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Loterias</h3>
+
+                  <p class="project-category">FullStack</p>
+                </div>
+              </li>
+
               <li
                 class="project-item active"
                 data-filter-item
@@ -1094,6 +1133,40 @@
                   <h3 class="project-title">Vue Animes</h3>
 
                   <p class="project-category">Frontend</p>
+                </div>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="backend"
+              >
+                <div class="project-wrapper">
+                  <figure class="project-img">
+                    <div class="project-overlay"></div>
+
+                    <div class="project-item-icon-box">
+                      <!-- <a href="https://rifas-laravel-12.onrender.com/" target="_blank" class="icon-link">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </a> -->
+                      <a
+                        href="https://github.com/Jesus-David-Vidal-Ramirez/api-task"
+                        target="_blank"
+                        class="icon-link"
+                      >
+                        <ion-icon name="logo-github"></ion-icon>
+                      </a>
+                    </div>
+
+                    <img
+                      src="./assets/images/project/Api.png"
+                      alt="Api-Task"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Api Task</h3>
+
+                  <p class="project-category">Backend</p>
                 </div>
               </li>
 
@@ -1140,7 +1213,7 @@
               <li
                 class="project-item active"
                 data-filter-item
-                data-category="fullstack"
+                data-category="frontend"
               >
                 <div class="project-wrapper">
                   <figure class="project-img">
@@ -1148,14 +1221,14 @@
 
                     <div class="project-item-icon-box">
                       <a
-                        href="https://rifas-laravel-12.onrender.com/"
+                        href="https://jesus-david-vidal-ramirez.github.io/Maquetaciones/"
                         target="_blank"
                         class="icon-link"
                       >
                         <ion-icon name="eye-outline"></ion-icon>
                       </a>
                       <a
-                        href="https://github.com/Jesus-David-Vidal-Ramirez/rifas-laravel-12"
+                        href="https://github.com/Jesus-David-Vidal-Ramirez/Maquetaciones"
                         target="_blank"
                         class="icon-link"
                       >
@@ -1164,48 +1237,14 @@
                     </div>
 
                     <img
-                      src="./assets/images/project/rifas.png"
-                      alt="vue-anime"
-                      loading="lazy"
-                    />
-                  </figure>
-                  <h3 class="project-title">Loterias</h3>
-
-                  <p class="project-category">FullStack</p>
-                </div>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="backend"
-              >
-                <div class="project-wrapper">
-                  <figure class="project-img">
-                    <div class="project-overlay"></div>
-
-                    <div class="project-item-icon-box">
-                      <!-- <a href="https://rifas-laravel-12.onrender.com/" target="_blank" class="icon-link">
-                        <ion-icon name="eye-outline"></ion-icon>
-                      </a> -->
-                      <a
-                        href="https://github.com/Jesus-David-Vidal-Ramirez/api-task"
-                        target="_blank"
-                        class="icon-link"
-                      >
-                        <ion-icon name="logo-github"></ion-icon>
-                      </a>
-                    </div>
-
-                    <img
-                      src="./assets/images/project/Api.png"
+                      src="./assets/images/project/maquetacion.png"
                       alt="Api-Task"
                       loading="lazy"
                     />
                   </figure>
-                  <h3 class="project-title">Api Task</h3>
+                  <h3 class="project-title">Clons</h3>
 
-                  <p class="project-category">Backend</p>
+                  <p class="project-category">Frontend</p>
                 </div>
               </li>
             </ul>
@@ -1547,4 +1586,8 @@
         });
     </script>
   </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>

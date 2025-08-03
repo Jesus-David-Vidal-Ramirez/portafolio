@@ -20,9 +20,12 @@ emailjs
 
 ---
 
-![portafolio-presentacion]()
+---
+***Presentacion***
+![portafolio-presentacion](./assets/images/presentacion/presentacion.png)
+
 
 
 ---
-[***Link del sitio web*** 😜](/)
+[***Acceder al sitio web***](https://jesus-david-vidal-ramirez.github.io/portafolio/)
 ---
